@@ -331,7 +331,6 @@ body::after {
   font-size: 17px;
   color: white;
   background-color: transparent;
-  width: 100%;
   border: 2px solid #656565;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
