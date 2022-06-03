@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css?_v=20220603102139">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+
+					<picture><source srcset="img/logo.webp" type="image/webp"><img class="menu__small-logo" src="img/logo.png" alt=""></picture>
+
+					<div class="menu__inner">
+
+						<button type="button" class="menu__icon icon-menu "><span></span></button>
+
+						<div id="search-btn" class="fas fa-search menu__picture"></div>
+
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="" data-goto-header data-goto=".home" class="menu__link">home</a></li>
+								<li class="menu__item"><a href="" data-goto-header data-goto=".products" class="menu__link">menu</a></li>
+								<li class="menu__item"><a href="" data-goto-header data-goto=".about" class="menu__link">about</a></li>
+								<span class="menu__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture></span>
+								<li class="menu__item"><a href="" data-goto-header data-goto=".reviews" class="menu__link">reviews</a></li>
+								<li class="menu__item"><a href="" data-goto-header data-goto=".contact" class="menu__link">contact</a></li>
+								<li class="menu__item"><a href="" data-goto-header data-goto=".blogs" class="menu__link">blogs</a></li>
+							</ul>
+						</nav>
+
+						<div class="menu__cart cart" tabindex="0">
+
+							<div class="cart__text">
+								<button href="" class="fas fa-shopping-cart active menu__picture"></button>
+								<span class="cart__quantity">0</span>
+							</div>
+							<div class="cart-content">
+								<ul class="cart-content__list" data-simplebar>
+									<!-- <li class="cart-content__item">
+								<article class="cart-content__product cart-product">
+									<picture><source srcset="img/product-1.webp" type="image/webp"><img src="img/product-1.png" alt="" class="cart-product__img"></picture>
+									<div class="cart-product__text">
+										<h3 class="cart-product__title">CHEESE HAMBURGER</h3>
+										<span class="cart-product__price">1 $</span>
+									</div>
+									<button class="cart-product__delete" aria-label="Удалить товар"></button>
+								</article>
+							</li> -->
+
+								</ul>
+								<div class="cart-content__bottom">
+									<div class="cart-content__fullprice">
+										<span>Total:</span>
+										<span class="fullprice">1 $</span>
+									</div>
+									<button data-popup="#popup" class="cart-content__btn btn">go to cart</button>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+
+					<form action="" class="menu__form">
+						<input id="search-box" autocomplete="off" type="search" name="form[]" data-error="Ошибка" placeholder="search here..." class="menu__input">
+						<label for="search-box" class="fas fa-search"></label>
+					</form>
+
+
+
+				</div>
+			</div>
+		</header>
+		<main class="page">
+
+			<section data-watch-threshold="0.6" data-watch="navigator" class="home">
+				<div class="home__container">
+					<div class="home__up">
+						<img class="home__img" src="img/burger-baner.png" alt="">
+						<h3 data-watch class="home__title">So meaty you'll go crazy</h3>
+						<p data-watch class="home__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores at fuga
+							aliquam ipsa recusandae repellat laudantium pariatur amet culpa cum.</p>
+						<a data-watch href="#" class="home__btn btn">our menu</a>
+					</div>
+
+					<div class="home__service service">
+						<div class="service__box">
+							<i class="service__i fas fa-hamburger"></i>
+							<h3 class="service__title">best quality</h3>
+							<p class="service__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt,
+								cum.</p>
+						</div>
+
+						<div class="service__box">
+							<i class="service__i fas fa-shipping-fast"></i>
+							<h3 class="service__title">free delivery</h3>
+							<p class="service__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt,
+								cum.</p>
+						</div>
+
+						<div class="service__box">
+							<i class="service__i fas fa-headset"></i>
+							<h3 class="service__title">24/7 support</h3>
+							<p class="service__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt,
+								cum.</p>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<section data-watch-threshold="0.3" data-watch="navigator" class="products">
+				<div class="products__container">
+					<div class="products__title title">
+						<picture><source srcset="img/title-img.webp" type="image/webp"><img src="img/title-img.png" alt=""></picture>
+						<h3>OUR MENU</h3>
+					</div>
+
+					<div data-watch data-watch-once class="products__row">
+
+						<div class="products__item item-products">
+							<picture><source srcset="img/product-1.webp" type="image/webp"><img class="item-products__img" src="img/product-1.png" alt=""></picture>
+							<div class="item-products__stars">
+								<div class="rating rating_set">
+									<div class="rating__body">
+										<div class="rating__active"></div>
+										<div class="rating__items">
+											<input type="radio" class="rating__item" value="1" name="rating">
+											<input type="radio" class="rating__item" value="2" name="rating">
+											<input type="radio" class="rating__item" value="3" name="rating">
+											<input type="radio" class="rating__item" value="4" name="rating">
+											<input type="radio" class="rating__item" value="5" name="rating">
+										</div>
+									</div>
+									<div class="rating__value">4.5</div>
+								</div>
+							</div>
+							<h3 class="item-products__title">CHEESE HAMBURGER</h3>
+							<div class="item-products__price">2.99$</div>
+							<a href="#" class="item-products__btn btn">add to cart</a>
+						</div>
+
+						<div class="products__item item-products">
+
+							<picture><source srcset="img/product-2.webp" type="image/webp"><img class="item-products__img" src="img/product-2.png" alt=""></picture>
+							<div class="item-products__stars">
+								<div class="rating rating_set">
+									<div class="rating__body">
+										<div class="rating__active"></div>
+										<div class="rating__items">
+											<input type="radio" class="rating__item" value="1" name="rating">
+											<input type="radio" class="rating__item" value="2" name="rating">
+											<input type="radio" class="rating__item" value="3" name="rating">
+											<input type="radio" class="rating__item" value="4" name="rating">
+											<input type="radio" class="rating__item" value="5" name="rating">
+										</div>
+									</div>
+									<div class="rating__value">1</div>
+								</div>
+							</div>
+							<h3 class="item-products__title">CHEESE HAMBURGER</h3>
+							<div class="item-products__price">1.75$</div>
+							<a href="#" class="item-products__btn btn">add to cart</a>
+						</div>
+
+						<div class="products__item item-products">
+							<picture><source srcset="img/product-3.webp" type="image/webp"><img class="item-products__img" src="img/product-3.png" alt=""></picture>
+							<div class="item-products__stars">
+								<div class="rating rating_set">
+									<div class="rating__body">
+										<div class="rating__active"></div>
+										<div class="rating__items">
+											<input type="radio" class="rating__item" value="1" name="rating">
+											<input type="radio" class="rating__item" value="2" name="rating">
+											<input type="radio" class="rating__item" value="3" name="rating">
+											<input type="radio" class="rating__item" value="4" name="rating">
+											<input type="radio" class="rating__item" value="5" name="rating">
+										</div>
+									</div>
+									<div class="rating__value">3.0</div>
+								</div>
+							</div>
+							<h3 class="item-products__title">CHEESE HAMBURGER</h3>
+							<div class="item-products__price">1.50$</div>
+							<a href="#" class="item-products__btn btn">add to cart</a>
+						</div>
+
+						<div class="products__item item-products">
+							<picture><source srcset="img/product-4.webp" type="image/webp"><img class="item-products__img" src="img/product-4.png" alt=""></picture>
+							<div class="item-products__stars">
+								<div class="rating rating_set">
+									<div class="rating__body">
+										<div class="rating__active"></div>
+										<div class="rating__items">
+											<input type="radio" class="rating__item" value="1" name="rating">
+											<input type="radio" class="rating__item" value="2" name="rating">
+											<input type="radio" class="rating__item" value="3" name="rating">
+											<input type="radio" class="rating__item" value="4" name="rating">
+											<input type="radio" class="rating__item" value="5" name="rating">
+										</div>
+									</div>
+									<div class="rating__value">5</div>
+								</div>
+							</div>
+							<h3 class="item-products__title">CHEESE HAMBURGER</h3>
+							<div class="item-products__price">2.99$</div>
+							<a href="#" class="item-products__btn btn">add to cart</a>
+						</div>
+
+						<div class="products__item item-products">
+							<picture><source srcset="img/product-5.webp" type="image/webp"><img class="item-products__img" src="img/product-5.png" alt=""></picture>
+							<div class="item-products__stars">
+								<div class="rating rating_set">
+									<div class="rating__body">
+										<div class="rating__active"></div>
+										<div class="rating__items">
+											<input type="radio" class="rating__item" value="1" name="rating">
+											<input type="radio" class="rating__item" value="2" name="rating">
+											<input type="radio" class="rating__item" value="3" name="rating">
+											<input type="radio" class="rating__item" value="4" name="rating">
+											<input type="radio" class="rating__item" value="5" name="rating">
+										</div>
+									</div>
+									<div class="rating__value">3.5</div>
+								</div>
+							</div>
+							<h3 class="item-products__title">CHEESE HAMBURGER</h3>
+							<div class="item-products__price">1.10$</div>
+							<a href="#" class="item-products__btn btn">add to cart</a>
+						</div>
+
+						<div class="products__item item-products">
+							<picture><source srcset="img/product-6.webp" type="image/webp"><img class="item-products__img" src="img/product-6.png" alt=""></picture>
+							<div class="item-products__stars">
+								<div class="rating rating_set">
+									<div class="rating__body">
+										<div class="rating__active"></div>
+										<div class="rating__items">
+											<input type="radio" class="rating__item" value="1" name="rating">
+											<input type="radio" class="rating__item" value="2" name="rating">
+											<input type="radio" class="rating__item" value="3" name="rating">
+											<input type="radio" class="rating__item" value="4" name="rating">
+											<input type="radio" class="rating__item" value="5" name="rating">
+										</div>
+									</div>
+									<div class="rating__value">4.0</div>
+								</div>
+							</div>
+							<h3 class="item-products__title">CHEESE HAMBURGER</h3>
+							<div class="item-products__price">0.99$</div>
+							<a href="#" class="item-products__btn btn">add to cart</a>
+						</div>
+
+					</div>
+
+					<div data-watch-threshold="0.6" data-watch="navigator" class="about">
+						<div data-watch class="about__image">
+							<picture><source srcset="img/about-img.webp" type="image/webp"><img class="about__picture" src="img/about-img.png" alt=""></picture>
+						</div>
+
+						<div data-watch class="about__content">
+							<h3 class="about__title">STEP INTO BURGER HEAVEN</h3>
+							<p class="about__text">Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Est, Veniam
+								Error Fugit Quasi Perspiciatis Blanditiis Quo, Sint Beatae Ut, Commodi Fuga Illo
+								Reprehenderit Ea Voluptatibus Earum Fugiat Obcaecati Doloremque? Aspernatur?</p>
+							<div class="about__icons">
+								<h3 class="about__plus"><i class="fas fa-check"></i>best price</h3>
+								<h3 class="about__plus"><i class="fas fa-check"></i>BEST SERVICE</h3>
+								<h3 class="about__plus"><i class="fas fa-check"></i>FRESH INGREDIENT</h3>
+								<h3 class="about__plus"><i class="fas fa-check"></i>BACKED BUNS</h3>
+								<h3 class="about__plus"><i class="fas fa-check"></i>NATURAL CHEESE</h3>
+								<h3 class="about__plus"><i class="fas fa-check"></i>VEG & NON-VEG</h3>
+							</div>
+							<a href="#" class="about__btn btn">read more</a>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+			<section data-watch-threshold="0.6" data-watch="navigator" class="reviews">
+				<div class="reviews__container">
+
+
+
+					<div class="reviews__title title">
+						<picture><source srcset="img/title-img.webp" type="image/webp"><img src="img/title-img.png" alt=""></picture>
+						<h3>testimonial</h3>
+					</div>
+
+					<div data-watch class="reviews__row">
+
+						<div class="reviews__item">
+							<picture><source srcset="img/pic-1.webp" type="image/webp"><img class="reviews__img" src="img/pic-1.png" alt=""></picture>
+							<h3 class="reviews__name">Deila Dexter</h3>
+							<p class="reviews__text">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Nobis Qui
+								Accusamus Autem! Veniam Exercitationem Adipisci In Excepturi Labore Magni Voluptatibus?
+							</p>
+							<div class="reviews__stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+						</div>
+
+						<div class="reviews__item">
+							<picture><source srcset="img/pic-2.webp" type="image/webp"><img class="reviews__img" src="img/pic-2.png" alt=""></picture>
+							<h3 class="reviews__name">join deo</h3>
+							<p class="reviews__text">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Nobis Qui
+								Accusamus Autem! Veniam Exercitationem Adipisci In Excepturi Labore Magni Voluptatibus?
+							</p>
+							<div class="reviews__stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+						</div>
+
+						<div class="reviews__item">
+							<picture><source srcset="img/pic-3.webp" type="image/webp"><img class="reviews__img" src="img/pic-3.png" alt=""></picture>
+							<h3 class="reviews__name">Mary Lain</h3>
+							<p class="reviews__text">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Nobis Qui
+								Accusamus Autem! Veniam Exercitationem Adipisci In Excepturi Labore Magni Voluptatibus?
+							</p>
+							<div class="reviews__stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section data-watch-threshold="0.6" data-watch="navigator" class="contact">
+				<div class="contact__container">
+
+					<div class="contact__title title">
+						<picture><source srcset="img/title-img.webp" type="image/webp"><img src="img/title-img.png" alt=""></picture>
+						<h3>contact us</h3>
+					</div>
+
+					<div class="contact__row">
+						<iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2871.073389267013!2d15.381118065470393!3d43.97853182911146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4761e04f538c63e7%3A0x50f2a3d385586140!2z0JPQsNC70LXRiNC90Y_Qug!5e0!3m2!1sru!2sru!4v1651490202697!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+						<div class="contact__form form-contact">
+
+							<div class="form-contact__icons-container">
+
+								<div class="form-contact__icons">
+									<i class="fas fa-map"></i>
+									<h3>address :</h3>
+									<p>Mumbai, India - 400104</p>
+								</div>
+
+								<div class="form-contact__icons">
+									<i class="fas fa-envelope"></i>
+									<h3>EMAIL :</h3>
+									<p>Shaikhanas@Gmail.Com</p>
+									<p>Anasbhai@Gmail.Com</p>
+								</div>
+
+								<div class="form-contact__icons">
+									<i class="fas fa-phone"></i>
+									<h3>PHONE :</h3>
+									<p>+123-456-7890</p>
+									<p>+111-222-3333</p>
+								</div>
+
+							</div>
+
+							<form data-ajax data-dev action="sendmail.php" method="POST" class="form-contact__form">
+								<input autocomplete="off" type="text" name="form[]" data-error="Err" placeholder="full name" class="form-contact__input" required>
+								<input data-required="email" autocomplete="off" type="email" name="form[]" data-error="Err" placeholder="email" class="form-contact__input" required>
+								<input autocomplete="off" type="tel" name="form[]" data-error="Err" placeholder="phone" class="form-contact__input" required>
+								<textarea name="" class="form-contact__textarea" placeholder="message" id="" cols="30" rows="10"></textarea>
+								<input type="submit" class="form-contact__btn btn" value="send message">
+							</form>
+
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+			<section data-watch-threshold="0.6" data-watch="navigator" class="blogs">
+				<div class="blogs__container">
+
+					<div class="blogs__title title">
+						<picture><source srcset="img/title-img.webp" type="image/webp"><img src="img/title-img.png" alt=""></picture>
+						<h3>DAILY POSTS</h3>
+					</div>
+
+					<div data-watch class="blogs__row">
+
+						<div class="blogs__item item-blogs">
+							<div class="item-blogs__image">
+								<picture><source srcset="img/blog-1.webp" type="image/webp"><img class="item-blogs__picture" src="img/blog-1.jpg" alt=""></picture>
+								<div class="item-blogs__icons">
+									<a href=""><i class="fas fa-calendar"></i> 21st may,2022</a>
+									<a href=""><i class="fas fa-user"></i> By Admin</a>
+								</div>
+							</div>
+							<div class="item-blogs__content">
+								<h3 class="item-blogs__title">BLOG TITLE GOES HERE.</h3>
+								<p class="item-blogs__text">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.
+									Voluptas, Maxime.</p>
+								<a href="#" class="item-blogs__btn btn">read more</a>
+							</div>
+						</div>
+
+						<div class="blogs__item item-blogs">
+							<div class="item-blogs__image">
+								<picture><source srcset="img/blog-2.webp" type="image/webp"><img class="item-blogs__picture" src="img/blog-2.jpg" alt=""></picture>
+								<div class="item-blogs__icons">
+									<a href=""><i class="fas fa-calendar"></i> 21st may,2022</a>
+									<a href=""><i class="fas fa-user"></i> By Admin</a>
+								</div>
+							</div>
+							<div class="item-blogs__content">
+								<h3 class="item-blogs__title">BLOG TITLE GOES HERE.</h3>
+								<p class="item-blogs__text">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.
+									Voluptas, Maxime.</p>
+								<a href="#" class="item-blogs__btn btn">read more</a>
+							</div>
+						</div>
+
+						<div class="blogs__item item-blogs">
+							<div class="item-blogs__image">
+								<picture><source srcset="img/blog-3.webp" type="image/webp"><img class="item-blogs__picture" src="img/blog-3.jpg" alt=""></picture>
+								<div class="item-blogs__icons">
+									<a href=""><i class="fas fa-calendar"></i> 21st may,2022</a>
+									<a href=""><i class="fas fa-user"></i> By Admin</a>
+								</div>
+							</div>
+							<div class="item-blogs__content">
+								<h3 class="item-blogs__title">BLOG TITLE GOES HERE.</h3>
+								<p class="item-blogs__text">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.
+									Voluptas, Maxime.</p>
+								<a href="#" class="item-blogs__btn btn">read more</a>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__links">
+					<a href="#" data-goto-header data-goto=".home" class="btn footer__btn">home</a>
+					<a href="#" data-goto-header data-goto=".products" class="btn footer__btn">menu</a>
+					<a href="#" data-goto-header data-goto=".about" class="btn footer__btn">about</a>
+					<a href="#" data-goto-header data-goto=".reviews" class="btn footer__btn">reviews</a>
+					<a href="#" data-goto-header data-goto=".contact" class="btn footer__btn">contact</a>
+					<a href="#" data-goto-header data-goto=".blogs" class="btn footer__btn">blogs</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__top">
+					<h2 class="popup__title">Checkout</h2>
+					<span class="popup__number">Order № 3456 67</span>
+				</div>
+				<div class="popup__info">
+					<div class="popup__quantity popup__info-item">products in the order: <span>3 option</span></div>
+					<div class="popup__sum popup__info-item">total order amount: <span>568 789 $</span></div>
+					<div class="popup__products popup__info-item">
+						<button class="popup__open">order composition</button>
+						<ul class="popup__list">
+
+							<!-- <li class="popup__item">
+								<article class="popup__product order-product">
+									<picture><source srcset="img/product-1.webp" type="image/webp"><img src="img/product-1.png" alt="" class="order-product__img"></picture>
+									<div class="order-product__text">
+										<h3 class="order-product__title">CHEESE HAMBURGER</h3>
+										<span class="order-product__price">1 $</span>
+									</div>
+									<button class="order-product__delete">Delete</button>
+								</article>
+							</li> -->
+
+						</ul>
+					</div>
+				</div>
+				<form action="#" class="popup__form order-popup">
+					<label for="" class="order-popup__label">
+						<span class="order-popup__text">Your name</span>
+						<input autocomplete="off" type="text" name="Name" data-error="Ошибка" placeholder="Raven" class="order-popup__input">
+					</label>
+					<label for="" class="order-popup__label">
+						<span class="order-popup__text">phone number</span>
+						<input autocomplete="off" type="tel" name="Phone" data-error="Ошибка" placeholder="+7 (___) ___-__-__" class="order-popup__input">
+					</label>
+					<label for="" class="order-popup__label">
+						<span class="order-popup__text">Email</span>
+						<input autocomplete="off" type="email" name="Email" data-error="Ошибка" placeholder="post@gmail.com" class="order-popup__input">
+					</label>
+					<button class="order-popup__btn btn">place an order</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220603102139"></script>
+
+</body>
+
+</html>
