@@ -306,6 +306,10 @@ body::after {
   margin-bottom: 14px;
 }
 
+.order-popup {
+  padding: 0 40px;
+}
+
 .order-popup__label {
   margin-bottom: 14px;
   font-weight: 500;
