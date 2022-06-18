@@ -535,6 +535,7 @@ html::-webkit-scrollbar-thumb {
 
 html.menu-open .menu__body {
   top: 0;
+  opacity: 1;
 }
 
 .header {
@@ -2085,6 +2086,7 @@ html.menu-open .menu__body {
     background-color: #000000;
     padding: 90px 10px 20px 10px;
     top: -100%;
+    opacity: 0;
     overflow: auto;
     -webkit-transition: top 0.8s ease;
     -o-transition: top 0.8s ease;
