@@ -2044,6 +2044,9 @@ html.menu-open .menu__body {
     gap: 0;
     padding: 20px;
   }
+  .order-popup__input {
+  font-size: 13px;
+  }
 }
 
 @media (max-width: 47.99875em) {
